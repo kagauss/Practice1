@@ -1,0 +1,19 @@
+---
+title: "Week3"
+author: "kagauss"
+date: "December 5, 2017"
+output: ioslides_presentation
+---
+
+##Slide 1
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
+data("mtcars")
+library(ggplot2)
+library(plotly)
+gg <- ggplot(mtcars, aes(x = hp, y = mpg))+geom_point(aes(color = factor(cyl)))+geom_smooth(method = "lm")+labs(col = "Cylinder")
+ggplotly(gg)
+```
+
+##Slide 2
+End of Show
