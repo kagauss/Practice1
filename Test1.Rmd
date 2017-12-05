@@ -8,4 +8,5 @@ output: html_document
 
 ```{r}
 head(mtcars)
+plot(mtcars$hp)
 ```
